@@ -1,0 +1,76 @@
+cmake_minimum_required(VERSION 3.0)
+
+set(MY_ADDITIONAL_SOURCES
+    # Please add your source files here
+    rt/groups/bvh.cpp
+)
+
+set(ASSIGNMENT_SOURCES
+    rt/groups/bvh.h
+    rt/loaders/obj.cpp
+    rt/loaders/obj.h
+    ${MY_ADDITIONAL_SOURCES}
+    main/a_indexing.cpp
+)
+
+file(COPY
+    models/cow.obj
+    models/cow.mtl
+    models/window.obj
+    models/walls.obj
+    models/valorant.png
+    models/trashcan.obj
+    models/table.obj
+    models/table_legs.obj
+    models/sketchpad.obj
+    models/shelf.obj
+    models/scene.obj
+    models/plant_pot.obj
+    models/plant_ground.obj
+    models/plant_aloe.obj
+    models/pen_white.obj
+    models/pen_black.obj
+    models/note_sticker.obj
+    models/nier.png
+    models/newscene.obj
+    models/newone.obj
+    models/new_scene.obj
+    models/mouse.obj
+    models/mouse_pad.obj
+    models/monitor.obj
+    models/monitor_screen.obj
+    models/macbook.obj
+    models/macbook_screen.obj
+    models/macbook_keyboard.obj
+    models/leaves.obj
+    models/keyboard.obj
+    models/keyboard_white_buttons.obj
+    models/keyboard_red_buttons.obj
+    models/keyboard_case.obj
+    models/keyboard_blue_buttons.obj
+    models/iphone.obj
+    models/ipad.obj
+    models/frame_small.obj
+    models/frame_small_picture.obj
+    models/frame_big.obj
+    models/frame_big_picture.obj
+    models/flower.obj
+    models/eyes.obj
+    models/cup.obj
+    models/cup_pen.obj
+    models/clows.obj
+    models/chair_top.obj
+    models/chair_legs.obj
+    models/cat.png
+    models/case.obj
+    models/case_inside.obj
+    models/case_glass.obj
+    models/case_cooler.obj
+    models/case_buttons.obj
+    models/carpet.obj
+    models/book_b.obj
+    models/book_a.obj
+    models/body.obj
+    models/better_carpet.obj
+    DESTINATION ${CMAKE_BINARY_DIR}/models
+)
